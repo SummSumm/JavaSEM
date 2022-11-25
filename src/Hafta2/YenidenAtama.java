@@ -1,4 +1,4 @@
-package ikinciDeneme;
+package Hafta2;
 
 public class YenidenAtama {
     public static void main(String[] args) {

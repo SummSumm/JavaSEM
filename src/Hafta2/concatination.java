@@ -1,4 +1,4 @@
-package ikinciDeneme;
+package Hafta2;
 
 public class concatination {
     public static void main(String[] args) {
