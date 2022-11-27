@@ -1,16 +1,20 @@
 package Ödevler;
 
-public class Ödev1 {
+import java.util.Scanner;
+
+public class Ödev1Updated {
     public static void main(String[] args) {
           /*
-        1. Kullanıcıdan sınav adı istenir
-        String examName = "...";
-        2. Kullanıcıdan sınav başlangıcının saati tamsayı olarak istenir
-        int starthour = ...;
-        3. Kullanıcıdan sınav başlangıcının dakikası tamsayı olarak istenir
-        int startmin = ...;
-        4. Kullanıcıdan sınav suresi toplam dakika olarak tamsayı olarak istenir
-        int time = ...;
+        0. Scanner kurulur
+
+        1. Print komutu ile Kullanıcıdan sınav adı istenir
+        String examName = Scanner'dan gelen dizgi
+        2. Print komutu ile Kullanıcıdan sınav başlangıcının saati tamsayı olarak istenir
+        int starthour = Scanner'dan gelen int
+        3. Print komutu ile Kullanıcıdan sınav başlangıcının dakikası tamsayı olarak istenir
+        int startmin = Scanner'dan gelen int;
+        4. Print komutu ile Kullanıcıdan sınav suresi toplam dakika olarak tamsayı olarak istenir
+        int time = Scannerdan gelen int;
         5. sureninTamamı variableına startHour'ın 60 ile çarpımına start min eklenerek toplam olarak dakika karşılığı bulunur.
         Sonra da buna yeni eklenecek sure (time) eklenir. Bu şekilde sınav süresinin bütünü bulunur.
         Artık bu dakika bütününden saat ve dakikayı hesaplamalıyız.
@@ -26,10 +30,16 @@ public class Ödev1 {
 
          */
 
-        String examName = "EPE";
-        int startHour = 10;
-        int startmin = 50;
-        int time = 200;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Sınavın adını giriniz");
+        String examName = sc.next();
+        System.out.println("Sınav başlangıç saatini tam sayı olarak giriniz");
+        int startHour = sc.nextInt();
+        System.out.println("Sinav başlangıç dakikasını tamsayı olarak giriniz");
+        int startmin = sc.nextInt();
+        System.out.println("Sınav süresini tamsayı olarak giriniz");
+        int time = sc.nextInt();
 
         int sureninTamamı = ((startHour*60)+startmin)+time;
         int yeniSaat = sureninTamamı/60;

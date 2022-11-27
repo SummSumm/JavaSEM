@@ -13,6 +13,14 @@ public class joptionPane {
         String veri = JOptionPane.showInputDialog("Bir sayı giriniz");
         int sayi = Integer.parseInt(veri); /* Tip dönüştürme yapılıyor */
         JOptionPane.showMessageDialog(null, "Girilen sayının karesi: " + sayi * sayi);
+
+        String data = JOptionPane.showInputDialog("Lütfen dikdörtgenin kısa kenarını girin");
+        int kk = Integer.parseInt(data);
+        data = JOptionPane.showInputDialog("Lütfen dikdörtgenin uzun kenarını girin");
+        int uk = Integer.parseInt(data);
+
+        JOptionPane.showMessageDialog(null, "Dikdörtgenin karesi= " + (kk*uk));
+
     }
 
 }
